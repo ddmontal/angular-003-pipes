@@ -105,6 +105,15 @@
         <td>personalizado</td>
         <td>{{ nombre2 | capitalizar:false }}</td>
       </tr>
+
+      <tr>
+        <td scope="row">{{ password }}</td>
+        <td>
+          contraseña:{{ activarPass }}
+          <a name="" id="" (click)="activarPass = !activarPass" class="btn btn-outline-primary" href="javascript:;" role="button">Cambiar</a>
+        </td>
+        <td>{{ password | contrasena:activarPass }}</td>
+      </tr>
     </tbody>
   </table>
 

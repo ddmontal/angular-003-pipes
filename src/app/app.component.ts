@@ -25,13 +25,12 @@ export class AppComponent {
   };
 
   valorDePromesa = new Promise((resolve, reject) => {
-    setTimeout(
-      () => resolve('Termino de cargar')
-    , 3000);
+    setTimeout(() => resolve('Termino de cargar'), 3000);
   });
 
   fecha = new Date();
 
-  video = "bON-KPiiNCk"
-
+  video = 'bON-KPiiNCk';
+  password = 'Contraseña';
+  activarPass = false;
 }

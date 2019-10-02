@@ -8,11 +8,12 @@ import localeEs from '@angular/common/locales/es';
 
 import { CapitalizarPipe } from "./pipes/capitalizar.pipe";
 import { DomseguroPipe } from './pipes/domseguro.pipe';
+import { ContrasenaPipe } from './pipes/contrasena.pipe';
 
 registerLocaleData(localeEs);
 
 @NgModule({
-  declarations: [AppComponent, CapitalizarPipe, DomseguroPipe],
+  declarations: [AppComponent, CapitalizarPipe, DomseguroPipe, ContrasenaPipe],
   imports: [BrowserModule, AppRoutingModule],
   providers: [
     {
